@@ -11,7 +11,6 @@ vagrant up
 
 
 ## TODO
-- [ ] run terraform
 
 ## DONE
 - [x] create a vagrant file 
@@ -19,3 +18,4 @@ vagrant up
 - [x] install gcc
 - [x] install go version 1.10
 - [x] build the custom plugin
+- [x] run terraform
