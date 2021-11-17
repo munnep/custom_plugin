@@ -11,11 +11,11 @@ vagrant up
 
 
 ## TODO
-- [ ] install terraform
-- [ ] install gcc
 - [ ] install go
 - [ ] build the custom plugin
 - [ ] run terraform
 
 ## DONE
 - [x] create a vagrant file 
+- [x] install terraform
+- [x] install gcc
