@@ -2,9 +2,15 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
+
 # install terraform
 curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
 apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 
 apt-get update -y
-apt-get install -y terraform=0.11.15
+
+if [ "${VERSION}" ] ; then
+  apt-get install -y terraform=${VERSION}
+else
+  apt-get install -y terraform
+fi
